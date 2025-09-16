@@ -1,0 +1,7 @@
+drop button show the drop menu
+click on switch to imperial make all units from metric 
+the button become switch to metric
+if the query null>>>
+else
+search button on click fetch query in input
+button to show the day

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500;600;700&family=DM+Sans:ital,wght@1,600&family=Bricolage+Grotesque:wght@700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <title>Weather app</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/assets/images/logo.svg" alt="logo Weather now" />
+      </div>
+      <div class="drop-down">
+        <button class="drop-btn" id="units-btn">
+          <i class="fa-regular fa-gear"></i> units
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="drop-menu" id="units-drop-menu">
+          <div class="dropdown-section">
+            <button id="switch-unit">Switch to Imperial</button>
+          </div>
+          <div class="dropdown-section">
+            <h4>temperature</h4>
+            <ul>
+              <li>celsius (ºc)</li>
+              <li>fahrenheit (ºf)</li>
+            </ul>
+          </div>
+          <div class="dropdown-section">
+            <h4>wind speed</h4>
+            <ul>
+              <li>kmh</li>
+              <li>mph</li>
+            </ul>
+          </div>
+          <div class="dropdown-section">
+            <h4>precipitation</h4>
+            <ul>
+              <li>millimeter(mm)</li>
+              <li>inches(in)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <h1>how's the sky is looking today ?</h1>
+      <div class="search-container">
+        <div class="search-box">
+          <input
+            type="search"
+            id="search-field"
+            placeholder="search for a place" />
+          <button id="src-btn">search</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cards-holder"></div>
+      </div>
+    </main>
+
+    <script type="Module" src="script.js"></script>
+  </body>
+</html>
